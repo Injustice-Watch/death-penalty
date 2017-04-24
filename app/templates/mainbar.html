@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block mainbar %}
+
+
+	<!--title-->
+	<div class="headline">{{ title }}</div>
+	<!--byline-->
+	<div class="byline">By <a href="{{ bylineLink }}" target="_blank">{{ byline }}</a> </div>
+	<!--dateline-->
+	<div class="dateline">{{ date }}</div>
+	<!--body-->
+	<div class="body-text">
+		<p>Last week, <a href="https://www.nytimes.com/2017/04/21/us/arkansas-death-penalty-ledell-lee-execution.html?_r=0" target="_blank">Arkansas executed Ledell Lee</a> as part of a series of executions the state is performing before the expiration of their lethal injection drug, midazolam. Court orders effectively blocked four other lethal injections scheduled for last week.</p>
+		<p>Lethal injection, the primary mode of execution for states in which the death penalty is still legal, has fallen under <a href="http://www.newsweek.com/what-midazolam-lethal-injection-drug-supreme-court-defended-use-348175" target="_blank">constitutional scrutiny</a>, and <a href="https://www.themarshallproject.org/2015/03/06/controlled-substances?utm_medium=email&utm_campaign=newsletter&utm_source=opening-statement&utm_term=newsletter-20150309-129#.2feR1G82K" target="_blank">pharmaceutical companies have objected to selling drugs to prisons for the purpose of carrying out executions</a>. While the method of lethal injection has come under fire for being inhumane, some of its predecessors were even more so: </p>
+	</div>
+	
+		<div class="gfx" >
+			<iframe src="graphic-01/index.html" scrolling=no width="100%" height=500 frameborder="0"></iframe>
+		</div>
+		
+		
+	<div class="body-text">
+	
+		<p><em>Injustice Watch</em> reviewed 400 years-worth of data on executions carried out on American soil from <a href="https://deathpenaltyinfo.org/executions-us-1608-2002-espy-file" target="_blank"> data collected by researchers M. Watt Espy and John Ortiz Smykla</a> (current to 2002), and <a href="https://deathpenaltyinfo.org/views-executions" target="_blank">a more current database maintained by the Death Penalty Information Center</a>.</p>
+		<p>Our analysis shows:</p>
+		<ul>
+			<li style="font-weight: 400;"><strong>4,711 </strong>inmates have been executed in states where the death penalty is no longer legal. </li>
+			<li style="font-weight: 400;">Of nearly 16,000 total executions, only <strong>372</strong> inmates (2.36%) executed were women. </li>
+			<li><strong>7,316 </strong>inmates (48%) executed were black. </li>
+		</ul>
+		<p>Murder is overwhelmingly the crime that has led to the death penalty. But many people have been executed for crimes that no longer would merit a death sentence in any states&mdash;crimes like witchcraft, slave revolt, and horse theft.</p>
+	
+	</div>
+	
+		<div class="gfx">
+			<iframe src="graphic-02/index.html" scrolling=no width="100%" height=750 frameborder="0"></iframe>
+		</div>
+		
+		<div class="body-text">
+		
+		<p class="signoff">
+		<img src="assets/github-icon.png" id="github-icon"><a href="{{ githubRepo }}">Find the dataset and our code for analyzing and visualizing it on our GitHub.</a>
+		</p>
+	</div>
+{% endblock %}

@@ -1,0 +1,104 @@
+<html>
+<head>
+
+<script src="https://use.typekit.net/fhr0vwf.js"></script>
+<script src="https://d3js.org/d3-time.v1.min.js"></script>
+<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+<style>
+#line-chart{
+	width:100%;
+}
+#button-space{
+	width:500px;
+	
+}
+.buttons{
+	text-align:center;
+	margin:5px;
+	font-family:'proxima nova',sans-serif;
+	font-weight:100;
+	background-color: '#152C55';
+	color: '#fff';
+	border-radius:3px;
+	font-size:12px;
+	padding:3px 7px 3px 7px;
+	display:inline-block;
+}
+.buttons:hover{
+	cursor:pointer;
+}
+.y-axis{
+	font-family:'proxima nova',sans-serif;
+	font-weight:700;
+}
+.chart-title{
+	font-family:'playfair display',serif;
+	font-weight:900;
+	font-size:27px;
+}
+#tooltip{
+	font-family:'proxima nova',sans-serif;
+	box-shadow: 2px 2px 2px #fafafa;
+	border-style:solid;
+	border-width:1px;
+	border-radius:3px;
+	border-color:#d3d3d3;
+	padding:0px 10px 0px 10px;
+	width:auto;
+	position:absolute;
+	background-color:#fff;
+}
+#info{
+	font-size:18px;
+	font-weight:300;
+	text-transform:uppercase;
+	border-bottom-color:red;
+	border-bottom-width:1px;
+	border-bottom-style:dotted;
+}
+#more-info{
+	font-size:12px;
+}
+.button-active{
+	background-color:'purple';
+}
+#draw{
+	width:100%;
+}
+@media only screen and (max-width: 500px) {
+    #button-space{
+    	width:100%;
+    }
+    #footnote {
+        width:100%;
+    }
+    .chart-title{
+    	font-size:16px;
+    	width:100%;
+    }
+}
+</style>
+
+<div id="graphic-01"><svg id="draw"></svg></div>
+<div id="target-02"></div>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+
+<script>
+	var pymChild = new pym.Child();
+	pymChild.sendHeight();
+</script>
+<script src='../js/jquery.min.js'></script>
+<script src='../js/d3.min.js'></script>
+<script src='../js/lodash.min.js'></script>
+<script src="node_modules/d3-extended/d3-extended.min.js"></script>
+<script src='index.js'></script>
+<!--<script src='crimes.js'></script>-->
+
+</body>
+</html> 

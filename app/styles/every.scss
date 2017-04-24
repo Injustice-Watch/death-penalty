@@ -1,0 +1,166 @@
+$desktop-width:734px;
+
+@mixin responsive-body{
+	@media only screen and (max-width: $desktop-width){
+		width:90%;
+		margin-left:5%;
+	}
+}
+a:link, a:visited,a:hover, a:active  {
+  		text-decoration: none; color: inherit;
+  		cursor:pointer;
+	}
+body{
+	overflow-x:hidden;
+}
+.nav{
+	height:35px;
+	top:0;
+	width:110%;
+	background-color:#fafafa ;
+	margin-top:-10px;
+	padding-top:10px;
+	padding-left:5%;
+	margin-left:-5%;
+	border-bottom-width:1px;
+	border-bottom-color:#d3d3d3;
+	border-bottom-style:dotted;
+}
+.banner{
+	height:30px;
+    vertical-align: middle;
+    @media only screen and (max-width: $desktop-width){
+		height:20px;
+		margin-top:5px;
+	}
+}
+.banner-text{
+	color:rgb(26,37,38);
+	text-transform:uppercase;
+	font-family:'Proxima Nova','sans-serif';
+	font-weight:300;
+	font-size:15px;
+    vertical-align: middle;
+    @media only screen and (max-width: $desktop-width){
+		
+		margin-top:15px;
+	}
+}
+.right-float-banner{
+	float:right;
+	margin-right:15%;
+	vertical-align:middle;
+	margin-top:3px;
+}
+.donate{
+	color:#fafafa;
+	background-color:#F95959;
+	border-radius:3px;
+	padding:3px;
+	text-transform:uppercase;
+	font-family:'Proxima Nova','sans-serif';
+	font-weight:700;
+	font-size:15px;
+    vertical-align: middle;
+    text-decoration:none !important;
+}
+.social-icon{
+	height:20px;
+	vertical-align:middle;
+	margin-left:5px;
+	margin-right:5px;
+}
+.social-icon:hover{
+	opacity:.7;
+}
+.mainbar{
+	margin-top:10px;
+}
+.headline{
+	font-size:55px;
+	font-weight:900;
+	font-family:'Playfair Display','serif';
+	width:734px;
+	margin:auto;
+	@include responsive-body;
+}
+.byline{
+	font-size:15px;
+	font-family:'Proxima Nova','sans-serif';
+	font-style:italic;
+	width:734px;
+	margin:auto;
+	@include responsive-body;
+}
+.dateline{
+	font-size:15px;
+	font-family:'Proxima Nova','sans-serif';
+	font-weight:300;
+	width:734px;
+	margin:auto;
+	@include responsive-body;
+}
+.gfx{
+	width:80%;
+	margin:auto;
+	
+	@media only screen and (max-width: $desktop-width){
+		width:100%;
+	}
+}
+.graphic{
+	margin:auto;
+}
+.body-text{
+	font-family:'Georgia','serif';
+	line-height:1.5;
+	font-size:18px;
+	width:$desktop-width;
+	margin:auto;
+	@include responsive-body;
+	a:link, a:visited  {
+  		text-decoration: underline; color: inherit;
+	}
+	a:hover, a:active{
+		text-decoration:underline;
+		color:#F95959;
+	}
+}
+#github-icon{
+	height:15px;
+	margin-right:10px;
+}
+.signoff{
+	font-family:'Proxima Nova','sans-serif';
+	font-weight:700;
+	text-decoration:none;
+}
+
+.comments-wrapper{
+	
+	margin-left:30%;
+	@media only screen and (max-width: 500px){
+		margin-left:0;
+	}
+	
+}
+.fb-comments{
+	
+}
+.footer{
+	background-color:#1A2526;
+	margin-left:-10%;
+	padding-left:10%;
+	margin-right:-10%;
+	padding-right:10%;
+	margin-bottom:-10px;
+	padding-bottom:10px;
+	bottom:0;
+	vertical-align:bottom;
+	overflow:hidden;
+}
+.footer-text{
+	color:#fafafa;
+	font-family:'proxima nova',sans-serif;
+	font-weight:300;
+}

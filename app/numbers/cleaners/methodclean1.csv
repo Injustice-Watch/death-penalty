@@ -1,0 +1,37 @@
+CRIME,(count),NEWMETHOD
+Robbery - Murder Injection,154,Lethal Injection
+Murder Injection,128,Lethal Injection
+Murder Electrocution,78,Electrocution
+Robbery - Murder Electrocution,46,Electrocution
+Rape - Murder Injection,44,Lethal Injection
+Kidnapping - Murder - Robbery Injection,30,Lethal Injection
+Kidnapping - Murder Injection,29,Lethal Injection
+Murder - Burglary Injection,23,Lethal Injection
+Rape - Murder Electrocution,20,Electrocution
+Murder Gas,18,Gas
+Rape Electrocution,17,Electrocution
+unknown Injection,14,Lethal Injection
+Robbery - Murder Gas,12,Gas
+Murder - Rape - Robbery Injection,12,Lethal Injection
+unknown Electrocution,11,Electrocution
+Conspiracy  to Murder Injection,11,Lethal Injection
+Arson - Murder Injection,10,Lethal Injection
+Rape Gas,8,Gas
+Rape - Murder Gas,6,Gas
+Kidnapping - Murder - Robbery Electrocution,4,Electrocution
+Rape - Murder Hanging,3,Hanging
+Robbery - Murder Hanging,3,Hanging
+Kidnapping - Murder Electrocution,3,Electrocution
+Murder - Rape - Robbery Gas,3,Gas
+Kidnapping - Murder - Robbery Gas,3,Gas
+Murder - Burglary Electrocution,2,Electrocution
+Espionage Electrocution,2,Electrocution
+Murder - Rape - Robbery Electrocution,2,Electrocution
+Murder - Burglary Gas,2,Gas
+unknown Hanging,1,Hanging
+Criminal Assault Gas,1,Gas
+Conspiracy  to Murder Electrocution,1,Electrocution
+Arson - Murder Electrocution,1,Electrocution
+Murder Hanging,1,Hanging
+Rape Hanging,1,Hanging
+Rape - Robbery Electrocution,1,Electrocution

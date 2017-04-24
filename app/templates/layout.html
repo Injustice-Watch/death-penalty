@@ -1,0 +1,85 @@
+{% set title = '400 Years of Execution' %}
+{% set keywords = 'executions, lethal injection, death penalty,'%}
+{% set metaImage = 'http://www.injusticewatch.org/wp-content/uploads/2017/04/death-preview.png' %}
+{% set description = 'Injustice Watch takes a look at how and for what crimes people have been executed on American soil.' %}
+{% set byline = 'Sam Hart' %}
+{% set bylineLink = 'http://www.injusticewatch.org/author/swhart/' %}
+{% set date = 'April 24, 2017' %}
+{% set deployUrl = 'http://injusticewatch.org/interactives/2017/death-penalty' %}
+{% set githubRepo = 'https://github.com/Injustice-Watch/' %}
+
+<head>
+<!--meta-->
+<title>{{ title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="{{ keywords }}">
+<meta name="description" content="{{ description }}">
+
+<!--facebook meta-->
+<meta property="og:url"                content="{{ deployUrl }}" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="{{ title }}" />
+<meta property="og:description"        content="{{ description }}" />
+<meta property="og:image"              content="{{ metaImage }}" />
+
+<link rel='stylesheet' type='text/css' href='css/main.css'>
+<script src="https://use.typekit.net/fhr0vwf.js"></script>
+<!--analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69011402-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<!--for social-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!--navigation-->
+<div class="nav">
+	<a href="http://injusticewatch.org"><img src="assets/banner.png" class="banner"></a><span class="banner-text"> | Data</span><div class="right-float-banner"><span class="donate"><a href="http://www.injusticewatch.org/donate/">Donate</a></span><a href="http://www.facebook.com/sharer/sharer.php?u={{ deployUrl }}&title={{ title }}
+" target="_blank"><img src="assets/facebook.png" class="social-icon" id="shareBtn"></a><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{ deployUrl }}" target="_blank"><img src="assets/twitter-icon.png" class="social-icon"></a></div>
+</div>
+
+<!--feed body text from template-->	
+<div class="mainbar">
+	{% block mainbar %}{% endblock %}
+</div>
+<!--facebook comments-->
+<div class="comments-wrapper">
+	
+	<div class="fb-comments" data-href="{{ deployUrl }}" data-numposts="5" data-width=500>
+	
+	</div>
+	
+</div>
+
+<!--footer-->
+<div class="footer">
+	<p class="footer-text">&copy; 2017 Injustice Watch. </p>
+</div>
+
+<!--Facebook share script-->
+
+
+<!--pym-->
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent('graphic-01', 'graphic-01/index.html', {});
+</script>
+
+</body>
+</head>
